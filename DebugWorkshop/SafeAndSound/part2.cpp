@@ -18,10 +18,9 @@ char* safe_string_copy(char* dest, unsigned int destsize, char* src)
 #define BUF_SIZE 20
 void part2()
 {
-	char password[] = "secret";
-	char dest[BUF_SIZE];
+	char dest[BUF_SIZE] = "";
 	char src[] = "hello world!";
-
+	char password[] = "secret";
 	safe_string_copy(dest, BUF_SIZE, src);
 
 	std::cout << src << std::endl;
