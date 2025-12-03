@@ -28,10 +28,9 @@ Point::~Point()
 
 Point& Point::operator=(const Point& other)
 {
-	delete _coord;
 	_coord = new int[2];
-	_coord[0] = other._coord[0];
-	_coord[1] = other._coord[1];
+	_coord[0] = other.getX();
+	_coord[1] = other.getY();
 	return *this;
 }
 
